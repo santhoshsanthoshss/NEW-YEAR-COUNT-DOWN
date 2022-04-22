@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(https://cdn.lifehack.org/wp-content/uploads/2014/12/New-Year-Goals.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+body::after{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+
+body *{
+    z-index: 1;
+}
+
+h1{
+    margin-top: -200px;
+    position: absolute;
+    font-size: 60px;
+}
+
+/* it will zoom the content */
+.countdown{
+    transform: scale(2); 
+    display: none;
+}
+
+.year{
+    font-size: 150px;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 20px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2{
+    margin: 0 0 5px;
+}
